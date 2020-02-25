@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery TwitsFetcher Plugin Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<link href="css/twitfetcher.css" rel="stylesheet" type="text/css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+body { font-family:'Open Sans'; background-color:#fafafa;}
+.container { margin:150px auto;}
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/social-media/jQuery-Plugin-To-Get-The-Latest-Tweets-From-Twitter-TwitsFetcher.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1 class="center-block">jQuery TwitsFetcher Plugin Example</h1>
+<div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="twitCt">
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="js/twitfetcher.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+    $("#twitCt").twitterFetcher({
+        widgetid: '721203749641793537', 
+        maxTweets: 5,
+        enablePermalink: true,
+		lang: "en"
+    });
+});
+</script>
+
+</body>
+</html>
